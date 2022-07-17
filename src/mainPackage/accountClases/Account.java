@@ -10,6 +10,7 @@ public class Account<T> {
 
     public Account(){
         // this is a default constructor
+        // this line added to avoid sonar issues
     }
 
     public Account(T accountType){
