@@ -4,6 +4,9 @@ import mainPackage.accountClases.Account;
 import mainPackage.accountClases.Gold;
 import mainPackage.accountClases.Platinum;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class GenericClass {
 
     public static void main(String[] args) {
