@@ -1,6 +1,7 @@
 package mainPackage;
 
 import mainPackage.accountClases.Account;
+import mainPackage.accountClases.GenericClassConcept;
 import mainPackage.accountClases.Gold;
 import mainPackage.accountClases.Platinum;
 
@@ -10,6 +11,12 @@ import java.util.List;
 public class GenericClass {
 
     public static void main(String[] args) {
+
+        // possible objects of GenericClassConcept
+        GenericClassConcept<Integer> demo1 = new GenericClassConcept<Integer>();
+//        GenericClassConcept<String> demo2 = new GenericClassConcept<String>();  // this line wll throw an error
+            // bcz String is not the child class of Number class, here we can pass only Either Number or child class
+        // Object of Number class.
 
         // for golden account
         Gold goldenAccountObject = new Gold();
