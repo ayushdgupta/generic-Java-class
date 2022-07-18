@@ -1,9 +1,6 @@
 package mainPackage;
 
-import mainPackage.accountClases.Account;
-import mainPackage.accountClases.GenericClassConcept;
-import mainPackage.accountClases.Gold;
-import mainPackage.accountClases.Platinum;
+import mainPackage.accountClases.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,8 +12,16 @@ public class GenericClass {
         // possible objects of GenericClassConcept
         GenericClassConcept<Integer> demo1 = new GenericClassConcept<Integer>();
 //        GenericClassConcept<String> demo2 = new GenericClassConcept<String>();  // this line wll throw an error
-            // bcz String is not the child class of Number class, here we can pass only Either Number or child class
-        // Object of Number class.
+            // bcz String is not the child class of Number class, here we can pass only Object of Either
+        // Number or child class.
+
+        // possible objects of GenericInerfaceConcept
+        GenericInterfaceConcept<Runnable> demo11 = new GenericInterfaceConcept<Runnable>();
+//        GenericInterfaceConcept<String> demo2 =
+//                                          new GenericInterfaceConcept<String>();  // this line wll throw an error
+        // bcz String is not the imlementation class of Runnable Interface, here we can pass only Object of Either
+        // Runnable or any implementation class. for e.g.
+        GenericInterfaceConcept<Thread> demo12 = new GenericInterfaceConcept<Thread>();
 
         // for golden account
         Gold goldenAccountObject = new Gold();
