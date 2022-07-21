@@ -19,7 +19,7 @@ public class GenericClass {
         GenericInterfaceConcept<Runnable> demo11 = new GenericInterfaceConcept<Runnable>();
 //        GenericInterfaceConcept<String> demo2 =
 //                                          new GenericInterfaceConcept<String>();  // this line wll throw an error
-        // bcz String is not the imlementation class of Runnable Interface, here we can pass only Object of Either
+        // bcz String is not the implementation class of Runnable Interface, here we can pass only Object of Either
         // Runnable or any implementation class. for e.g.
         GenericInterfaceConcept<Thread> demo12 = new GenericInterfaceConcept<Thread>();
 
